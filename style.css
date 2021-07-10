@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+  /* ---- particles.js container ---- */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+#intro{
+    background: #F8F5F1;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+  
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15rem;
+    color: white;
+}
+
+.marq {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-70%,-50%);
+}
+
+
+marquee{
+    font-size: 2rem;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+}
+
+.emoj{
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.name{
+    font-size: 1.8rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    color: rgb(100, 95, 95);
+}
+
+.info{
+    position: absolute;
+    bottom: 1rem;
+    left: 55%;
+    transform: translateX(-50%);
+    padding-top: 2rem;
+    
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+/* About CSS */
+#about-particles-js {
+    position: absolute;
+    width: 100%;
+    height: 770px;
+    background-color: black;
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .about-background{
+    position: absolute;
+    width: 100%;
+    height: 770px;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+}
+
+.about{
+    background-color: black;
+    color: white;
+    height: 770px;
+    margin: 0;
+    padding-left: 0;
+}
+
+.about-text{
+    padding-top: 4rem;
+    font-size: 6rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.bio{
+    font-family: 'Play', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+}
+
+.mail{
+    padding-left: 3rem;
+}
+
+.social{
+    font-family: 'Play', sans-serif;
+    font-size: 1.3rem;
+}
+
+.skills{
+    font-size: 2rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.skill-item{
+    border: 1px solid rgb(54, 53, 53);
+    display: inline;
+    padding: .4rem 1rem;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+    background-color: black;
+    color: white;
+    cursor: none !important;
+}
+
+.links{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 1.1rem;
+}
+
+.links:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.image{
+    border: 1px solid rgb(54, 53, 53);
+    box-shadow: 5px 4px 9px rgba(82, 80, 80, 0.89);
+    overflow: hidden;
+    transition: all 1s ease-in;
+    height: 400px;
+}
+
+.image:hover{
+    transform: rotate(9deg);
+    overflow: hidden;
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Play', sans-serif;
+    padding-top: 1rem;
+}
+
+.work{
+    position: fixed;
+    z-index: 1;
+    right: 25px;
+    bottom: 50%;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+
+.work:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        font-size: 5rem;
+        overflow: hidden;
+    }
+    
+    .marq {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-65%,-50%);
+    }
+    
+    .info{
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+    }
+
+    #about-particles-js {
+
+        height: 1100px;
+        
+      }
+    
+      .about-background{
+        height: 1100px;
+    }
+    
+    .about{
+        height: 1100px;
+    }
+
+    .about-text{
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .bio{
+        font-size: 1rem;
+        padding-top: 1.5rem;
+        padding-left: 3rem;
+    }
+
+    .image{
+        height: 300px;
+    }
+
+    .mail{
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+
+    .social{
+        font-family: 'Play', sans-serif;
+        font-size: 1rem;
+        padding-left: 3rem;
+        
+    }
+
+    .skills{
+        font-size: 2rem;
+    }
+
+    .skill-item{
+        font-size: .8rem;
+    }
+
+    .links{
+        color: white;
+        font-family: 'Play', sans-serif;
+        font-size: 1rem;
+    }
+
+    .work{
+        font-size: .8rem;
+    }
+}
+
+.works{
+    background-color: black;
+    color: white;
+}
+
+.works-website{
+    padding-top: 2rem;
+    font-family: 'Play', sans-serif;
+    font-size: 4rem;
+}
+
+.site-name{
+    font-size: 2rem;
+    font-family: 'Play', sans-serif;
+    padding-top: 3rem;
+}
+
+.live{
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+.live:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.comming-soon{
+    font-size: 3rem;
+    color: #d63384;
+}
